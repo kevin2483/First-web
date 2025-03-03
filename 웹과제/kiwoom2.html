@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- 안정재/60211675/기초웹 과제#2 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>팬 설문조사</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!-- CSS 파일 링크 -->
+</head>
+<body>
+
+    <!-- 헤더 섹션 -->
+    <header>
+        <h1>팬 설문조사</h1>
+        <nav>
+            <ul>
+                <li><a href="kiwoom.html">홈</a></li>
+                <li><a href="kiwoom2.html">팬 설문조사</a></li>
+                <li><a href="players.html">선수 정보</a></li>
+                <li><a href="notice.html">공지사항</a></li>
+                <li><a href="sitemap.html">사이트 맵</a></li>
+                <li><a href="community.html">커뮤니티</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 메인 콘텐츠 -->
+    <main>
+        <section>
+            <h2>설문조사에 참여해 주세요!</h2>
+            <form action="submit_form.html" method="post">
+                <fieldset>
+                    <legend>기본 정보 입력</legend>
+                    <label for="name">이름:</label>
+                    <input type="text" id="name" name="name" required><br>
+
+                    <label for="email">이메일:</label>
+                    <input type="email" id="email" name="email" required><br>
+
+                    <label for="age">나이:</label>
+                    <input type="number" id="age" name="age" required><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>선호도 조사</legend>
+                    <label for="favPlayer">가장 좋아하는 선수:</label>
+                    <select id="favPlayer" name="favPlayer">
+                        <option value="이정후">이정후</option>
+                        <option value="안우진">안우진</option>
+                        <option value="김하성">김하성</option>
+                    </select><br>
+
+                    <label>가장 선호하는 응원 방식:</label><br>
+                    <input type="radio" id="cheer1" name="cheerMethod" value="소리" required>
+                    <label for="cheer1">소리로 응원하기</label><br>
+                    <input type="radio" id="cheer2" name="cheerMethod" value="응원봉" required>
+                    <label for="cheer2">응원봉 사용하기</label><br>
+
+                    <label>추가 의견:</label><br>
+                    <textarea name="additionalComments" rows="4" cols="50" placeholder="의견을 작성해 주세요."></textarea><br>
+                </fieldset>
+
+                <input type="submit" value="제출">
+                <input type="reset" value="초기화">
+            </form>
+        </section>
+    </main>
+
+    <!-- 푸터 섹션 -->
+    <footer>
+        <p>&copy; 안정재/60211675/기초웹 과제#2</p>
+    </footer>
+
+</body>
+</html>
